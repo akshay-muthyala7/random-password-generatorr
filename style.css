@@ -1,0 +1,105 @@
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #1c1c1c;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: inherit;
+}
+
+.generator-title {
+    margin: 0;
+    font-family: 'karla' , sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    letter-spacing: -1.5px;
+}
+
+.title-accent {
+    display:block;
+    margin:0;
+    line-height: .8em;
+    color: #4ADF86;
+
+}
+
+
+.generator-description {
+    margin: 1em 0 2.5em;
+	font-size: 17px;
+	font-weight: lighter;
+	color: #8e888c;
+	text-shadow: #10B981; 
+}
+
+.generator-button {
+    padding: .7em 1.3em;
+	font-size: 1rem;
+	font-weight: 500;
+	color: white;
+	background-color: #10B981;
+	border: none;
+	border-radius: 6px;
+
+}
+
+/* layout */
+   
+.generator {
+    padding: 35px 40px;
+	max-width: 580px;
+	background-color: #1f2937;
+	flex-grow: 1;
+
+}
+
+.generator-body {
+    border-bottom: 1px solid #2F3E53;
+	padding-bottom: 2.3em;
+
+}
+
+.generator-passwords {
+	max-width: 100%;
+	margin-top: 2em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.password-field {
+	padding: 1.2em 2em;
+	display: inline-block;
+	width: 46%;
+	text-align: center;
+	line-height: 0;
+	color: #4ADF86;
+	font-size: 1rem;
+	font-weight: 500;
+	background-color: #263448;
+	border-radius: 6px;
+}
+
+
+@media (max-width: 430px) {
+	.generator-title {
+		font-size: 1.9rem;
+	}
+
+	.generator-passwords {
+		flex-direction: column;
+	}
+
+	.password-field {
+		width: 100%;
+		margin: .5em 0;
+	}
+}
